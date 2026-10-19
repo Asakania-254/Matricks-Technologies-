@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matricks Technologies Kenya offers laptops, computer repairs, Wi-Fi installation, graphic design, websites and business technology solutions.">
+  <title>Matricks Technologies | Smart Technology</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">
+  <img src="matricks_logo.png" alt="Matricks Technologies Logo">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR TECHNOLOGY PARTNER IN KENYA</p>
+        <h1>Smart Technology.<br>
+          <span>Smarter Business.</span>
+        </h1>
+        <p class="hero-text">
+          Quality computers, reliable IT support and digital
+          solutions that help individuals and businesses grow.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#products">Explore Products</a>
+          <a class="btn btn-outline"
+             href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20I%20need%20your%20services.">
+            Talk to Us
+          </a>
+        </div>
+        <p class="hero-note">Based in Nairobi, Kenya · Serving customers countrywide</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo">
+  <img src="matricks_logo.png" alt="Matricks Technologies">
+        </div>
+        <div class="tech-card">💻 Computers & Accessories</div>
+        <div class="tech-card">🌐 Digital Solutions</div>
+        <div class="tech-card">🛠️ IT Support</div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <p class="eyebrow">OUR PRODUCTS</p>
+        <h2>Technology That Works for You</h2>
+        <p>Find the right equipment for your home, school or business.</p>
+      </div>
+      
+<!-- PRODUCT SEARCH -->
+<div class="product-tools">
+
+  <input
+    type="search"
+    id="productSearch"
+    placeholder="Search laptops, printers, monitors..."
+    aria-label="Search products">
+
+  <div class="category-filters">
+    <button type="button" class="filter-btn active"
+      data-category="all">All Products</button>
+
+    <button type="button" class="filter-btn"
+      data-category="Laptops">Laptops</button>
+
+    <button type="button" class="filter-btn"
+      data-category="Printers">Printers</button>
+
+    <button type="button" class="filter-btn"
+      data-category="Monitors">Monitors</button>
+
+    <button type="button" class="filter-btn"
+      data-category="Desktops">Desktops</button>
+
+    <button type="button" class="filter-btn"
+      data-category="Accessories">Accessories</button>
+  </div>
+
+  <p id="productCount" aria-live="polite">
+    Browse our products
+  </p>
+
+</div>
+
+<div class="product-grid">
+
+  <div class="product-card" data-category="Laptops">
+    <img src="laptop.png" alt="Business laptop">
+    <div class="product-info">
+      <span class="product-tag">Laptops</span>
+      <h3>Dell Latitude 7280</h3>
+      <p>Intel Core i5 | 8GB RAM | 256GB SSD</p>
+      <div class="product-bottom">
+        <strong>KSh 19,989</strong>
+        <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20I%20am%20interested%20in%20the%20Dell%20Latitude%207280."
+           target="_blank" rel="noopener">Enquire</a>
+        
+<!-- DESKTOP COMPUTER -->
+<div class="product-card" data-category="Desktops">
+  <img
+    src="https://pconemexico.com.mx/cdn/shop/files/HP_EliteDesk_800_G4_Core_i5_8va._Torre.png?v=1782159968"
+    alt="HP desktop computer set"
+    loading="lazy">
+
+  <div class="product-info">
+    <span class="product-tag">Desktops</span>
+    <h3>HP Desktop Computer Set</h3>
+    <p>Desktop computer, monitor, keyboard and mouse. Ask us about available specifications.</p>
+
+    <div class="product-bottom">
+      <strong>Request price</strong>
+      <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20I%20am%20interested%20in%20a%20desktop%20computer."
+         target="_blank" rel="noopener">
+        Enquire
+      </a>
+    </div>
+  </div>
+</>
+
+<!-- OFFICE PRINTER -->
+<div class="product-card" data-category="Office Printers">
+  <img
+    src="https://shop.barlop.com/cdn/shop/collections/bp_4a9e1b61-99a2-46cb-87b5-083a08d65c38_580x.png?v=1656418177"
+    alt="HP LaserJet office printer"
+    loading="lazy">
+
+  <div class="product-info">
+    <span class="product-tag">Printers</span>
+    <h3>HP LaserJet Printer</h3>
+    <p>Office printing solution. Contact us to confirm the model and available features.</p>
+
+    <div class="product-bottom">
+      <strong>Request price</strong>
+      <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20please%20share%20your%20HP%20printer%20models%20and%20prices."
+         target="_blank" rel="noopener">
+        Enquire
+      </a>
+    </div>
+  </div>
+</>
+
+<!-- KEYBOARD AND MOUSE -->
+<div class="product-card" data-category="Accessories">
+  <img
+    src="https://down-br.img.susercontent.com/file/sg-11134201-7rau8-mb1lzx0n821ue9"
+    alt="Keyboard and mouse accessory set"
+    loading="lazy">
+
+  <div class="product-info">
+    <span class="product-tag">Accessories</span>
+    <h3>Keyboard and Mouse Set</h3>
+    <p>Computer accessories for home, school and office use.</p>
+
+    <div class="product-bottom">
+      <strong>Request price</strong>
+      <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20I%20am%20interested%20in%20a%20keyboard%20and%20mouse%20set."
+         target="_blank" rel="noopener">
+        Enquire
+      </a>
+    </div>
+  </div>
+</>
+
+      </div>
+    </div>
+  </>
+
+  <div class="product-card">
+    <img src="printer.png" alt="Office printer">
+    <div class="product-info">
+      <span class="product-tag">Printers</span>
+      <h3>Office Printer</h3>
+      <p>Reliable printing for home and business use.</p>
+      <div class="product-bottom">
+        <strong>30,000</strong>
+        <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20please%20share%20your%20printer%20prices."
+           target="_blank" rel="noopener">Enquire</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card" data-category="Monitors">
+    <img src="monitor.png" alt="Computer monitor">
+    <div class="product-info">
+      <span class="product-tag">Monitors</span>
+      <h3>24-inch Dell Monitor</h3>
+      <p>Full HD display | 100Hz refresh rate</p>
+      <div class="product-bottom">
+        <strong>KSh 9,000</strong>
+        <a href="https://wa.me/254793535552?text=Hello%20Matricks%20Technologies%2C%20I%20am%20interested%20in%20the%2024-inch%20Dell%20monitor."
+           target="_blank" rel="noopener">Enquire</a>
+      </div>
+    </div>
+  </>
+
+</div>
+
+    </section>
+      
+      <section class="section services-section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Our Professional Services</h2>
+        <p>Practical technology solutions for homes and businesses.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card service-card">
+          <div class="card-icon">🔧</div>
+          <h3>Computer Repair</h3>
+          <p>Computer troubleshooting, software installation, upgrades and maintenance.</p>
+        </article>
+
+        <article class="card service-card">
+          <div class="card-icon">📶</div>
+          <h3>Wi-Fi & Networking</h3>
+          <p>Wi-Fi troubleshooting, router setup, network cabling and connectivity support.</p>
+        </article>
+
+        <article class="card service-card">
+          <div class="card-icon">🎨</div>
+          <h3>Graphic Design</h3>
+          <p>Business posters, flyers, banners and promotional designs.</p>
+        </article>
+
+        <article class="card service-card">
+          <div class="card-icon">🌍</div>
+          <h3>Website Development</h3>
+          <p>Professional business websites, updates and website management.</p>
+        </article>
+
+        <article class="card service-card">
+          <div class="card-icon">🔐</div>
+          <h3>IT & Cybersecurity</h3>
+          <p>Basic security guidance, system protection and IT support.</p>
+        </article>
+
+        <article class="card service-card">
+          <div class="card-icon">📊</div>
+          <h3>POS & Stock Systems</h3>
+          <p>Technology solutions to help shops manage sales, inventory and business records.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-box">
+        <p class="eyebrow">ABOUT MAT RICKS</p>
+        <h2>Technology Made Simple.</h2>
+        <p>
+          Matricks Technologies is a Kenyan technology business focused
+          on computer products, IT support and digital solutions.
+          We aim to make technology more accessible, useful and
+          reliable for individuals and businesses.
+        </p>
+        <a class="btn btn-primary" href="#contact">Work With Us</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>How Can We Help You?</h2>
+        <p>Tell us what you need, and let's find a solution.</p>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-details">
+          <h3>Contact Matricks Technologies</h3>
+          <p>📍 Nairobi, Kenya</p>
+          <p>📞 +254 793 535 552</p>
+          <p>✉️ matrickstech@gmail.com</p>
+          <p>🚚 Countrywide delivery available for eligible products.</p>
+        </div>
+
+        <form id="contactForm">
+          <label for="customerName">Your name</label>
+          <input id="customerName" type="text"
+            placeholder="Enter your name" required>
+
+          <label for="customerContact">Your phone or email</label>
+          <input id="customerContact" type="text"
+            placeholder="How can we reach you?" required>
+
+          <label for="customerService">What do you need?</label>
+          <select id="customerService" required>
+            <option value="">Choose a service</option>
+            <option>Laptop or computer</option>
+            <option>Computer accessories</option>
+            <option>Printer or repair</option>
+            <option>Wi-Fi and networking</option>
+            <option>Graphic design</option>
+            <option>Website development</option>
+            <option>POS or stock management</option>
+            <option>Other IT support</option>
+          </select>
+
+          <label for="customerMessage">Your message</label>
+          <textarea id="customerMessage"
+            placeholder="Describe what you need..." rows="4"
+            required></textarea>
+
+          <button class="btn btn-primary form-button" type="submit">
+            Send Enquiry on WhatsApp
+          </button>
+          <p class="form-note">
+            Your enquiry will open in WhatsApp for you to send.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">MATRICKS<span>TECH</span></a>
+    <p>Smart Technology. Smarter Business.</p>
+    <p>© <span id="year"></span> Matricks Technologies. All rights reserved.</p>
+    <a href="https://wa.me/254793535552">Chat with us on WhatsApp</a>
+  </footer>
+<script src="script.js"></script>
+  
+<!-- MATRICKS TECHNOLOGIES CONTACT AND ORDER SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-heading">
+    <span class="contact-tag">WE ARE HERE TO HELP</span>
+    <h2>Contact Matricks Technologies</h2>
+    <p>Need a laptop, printer, computer repair or IT support?
+       Send us your enquiry today.</p>
+  </div>
+
+  <div class="contact-layout">
+
+    <div class="contact-details">
+      <h3>Get in Touch</h3>
+
+      <p><strong>Business:</strong> Matricks Technologies</p>
+
+      <p><strong>Phone:</strong>
+        <a href="tel:+254793535552">+254 793 535 552</a>
+      </p>
+
+      <p><strong>Email:</strong>
+        <a href="mailto:matrickstech@gmail.com">
+          matrickstech@gmail.com
+        </a>
+      </p>
+
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+      <a class="contact-whatsapp"
+         href="https://wa.me/254793535552"
+         target="_blank" rel="noopener">
+        Chat with Us on WhatsApp
+      </a>
+    </div>
+
+    <form id="orderForm" class="order-form">
+      <h3>Product Enquiry Form</h3>
+
+      <label for="customerName">Your full name</label>
+      <input type="text" id="customerName"
+             placeholder="Enter your name" required>
+
+      <label for="customerPhone">Your phone number</label>
+      <input type="tel" id="customerPhone"
+             placeholder="e.g. 07XXXXXXXX" required>
+
+      <label for="orderProduct">Product or service</label>
+      <select id="orderProduct" required>
+        <option value="">Select a product or service</option>
+        <option>Laptop</option>
+        <option>Desktop computer</option>
+        <option>Printer</option>
+        <option>Monitor</option>
+        <option>Computer accessories</option>
+        <option>Computer repair</option>
+        <option>Printer repair</option>
+        <option>Wi-Fi installation</option>
+        <option>Website design</option>
+        <option>Graphic design</option>
+        <option>Other IT service</option>
+      </select>
+
+      <label for="orderQuantity">Quantity</label>
+      <input type="number" id="orderQuantity"
+             min="1" value="1" required>
+
+      <label for="orderMessage">Additional details</label>
+      <textarea id="orderMessage"
+                rows="4"
+                placeholder="Tell us the model, budget or service you need"></textarea>
+
+      <button type="submit" class="order-submit">
+        Send Enquiry on WhatsApp
+      </button>
+
+      <p class="form-note">
+        Your enquiry opens in WhatsApp for you to review and send.
+      </p>
+    </form>
+
+  </div>
+</section>
+
+</body>
+</html>
