@@ -1369,4 +1369,122 @@ img.logo {
     height: 180px;
   }
   }
+/* MATRICKS TECHNOLOGIES - PREMIUM CUSTOMER ENQUIRY FORM */
 
+#contactForm {
+  width: 100%;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5edf5;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(11, 27, 58, 0.09);
+  box-sizing: border-box;
+}
+
+#contactForm h3 {
+  color: #0b1b3a;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin: 0 0 10px;
+}
+
+#contactForm > p:first-of-type {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+#contactForm label {
+  display: block;
+  color: #172b4d;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 15px;
+  color: #172b4d;
+  background: #f8fafc;
+  border: 1px solid #d8e2ee;
+  border-radius: 11px;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              background 0.2s ease;
+}
+
+#contactForm textarea {
+  min-height: 125px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  background: #ffffff;
+  border-color: #0798e8;
+  box-shadow: 0 0 0 3px rgba(7, 152, 232, 0.12);
+}
+
+#contactForm .form-button {
+  display: block;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 24px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #087fe5;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+#contactForm .form-button:hover {
+  background: #0669c2;
+  transform: translateY(-1px);
+}
+
+#contactForm .form-note {
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 13px 0 0;
+}
+
+@media (max-width: 480px) {
+  #contactForm {
+    padding: 20px 16px;
+    margin: 18px auto;
+    border-radius: 16px;
+  }
+
+  #contactForm h3 {
+    font-size: 1.4rem;
+  }
+
+  #contactForm label {
+    margin-top: 15px;
+  }
+
+  #contactForm .form-button {
+    font-size: 0.95rem;
+  }
+}
