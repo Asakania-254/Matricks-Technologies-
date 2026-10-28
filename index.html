@@ -377,87 +377,64 @@
 <script src="script.js"></script>
   
 <!-- MATRICKS TECHNOLOGIES CONTACT AND ORDER SECTION -->
-<section id="contact" class="contact-section">
-  <div class="contact-heading">
-    <span class="contact-tag">WE ARE HERE TO HELP</span>
-    <h2>Contact Matricks Technologies</h2>
-    <p>Need a laptop, printer, computer repair or IT support?
-       Send us your enquiry today.</p>
-  </div>
+<form id="contactForm">
 
-  <div class="contact-layout">
+  <h3>How Can We Help You?</h3>
+  <p>
+    Tell us what you need, and Matricks Technologies
+    will help you find the right solution.
+  </p>
 
-    <div class="contact-details">
-      <h3>Get in Touch</h3>
+  <label for="customerName">Full Name *</label>
+  <input
+    id="customerName"
+    type="text"
+    placeholder="e.g. John Kamau"
+    autocomplete="name"
+    required
+  >
 
-      <p><strong>Business:</strong> Matricks Technologies</p>
+  <label for="customerContact">Phone Number or Email *</label>
+  <input
+    id="customerContact"
+    type="text"
+    placeholder="e.g. 07XX XXX XXX or email"
+    autocomplete="email"
+    required
+  >
 
-      <p><strong>Phone:</strong>
-        <a href="tel:+254793535552">+254 793 535 552</a>
-      </p>
+  <label for="customerService">What are you interested in? *</label>
+  <select id="customerService" required>
+    <option value="">Select a product or service</option>
+    <option value="Laptop or computer">Laptops and computers</option>
+    <option value="Computer accessories">Computer accessories</option>
+    <option value="Printer or repair">Printers and printer repair</option>
+    <option value="Computer repair">Computer repair and maintenance</option>
+    <option value="Wi-Fi and networking">Wi-Fi installation and networking</option>
+    <option value="Graphic design">Graphic design and posters</option>
+    <option value="Website development">Website design and development</option>
+    <option value="POS or stock management">POS and stock management systems</option>
+    <option value="IT support">IT support and cybersecurity</option>
+    <option value="Other">Other enquiry</option>
+  </select>
 
-      <p><strong>Email:</strong>
-        <a href="mailto:matrickstech@gmail.com">
-          matrickstech@gmail.com
-        </a>
-      </p>
+  <label for="customerMessage">Tell Us More *</label>
+  <textarea
+    id="customerMessage"
+    placeholder="Tell us the product, quantity, budget, location, or service you need..."
+    rows="5"
+    required
+  ></textarea>
 
-      <p><strong>Location:</strong> Nairobi, Kenya</p>
+  <button class="btn btn-primary form-button" type="submit">
+    Send Enquiry on WhatsApp
+  </button>
 
-      <a class="contact-whatsapp"
-         href="https://wa.me/254793535552"
-         target="_blank" rel="noopener">
-        Chat with Us on WhatsApp
-      </a>
-    </div>
+  <p class="form-note">
+    Your enquiry will open in WhatsApp, where you can review
+    and send it directly to our team.
+  </p>
 
-    <form id="orderForm" class="order-form">
-      <h3>Product Enquiry Form</h3>
-
-      <label for="customerName">Your full name</label>
-      <input type="text" id="customerName"
-             placeholder="Enter your name" required>
-
-      <label for="customerPhone">Your phone number</label>
-      <input type="tel" id="customerPhone"
-             placeholder="e.g. 07XXXXXXXX" required>
-
-      <label for="orderProduct">Product or service</label>
-      <select id="orderProduct" required>
-        <option value="">Select a product or service</option>
-        <option>Laptop</option>
-        <option>Desktop computer</option>
-        <option>Printer</option>
-        <option>Monitor</option>
-        <option>Computer accessories</option>
-        <option>Computer repair</option>
-        <option>Printer repair</option>
-        <option>Wi-Fi installation</option>
-        <option>Website design</option>
-        <option>Graphic design</option>
-        <option>Other IT service</option>
-      </select>
-
-      <label for="orderQuantity">Quantity</label>
-      <input type="number" id="orderQuantity"
-             min="1" value="1" required>
-
-      <label for="orderMessage">Additional details</label>
-      <textarea id="orderMessage"
-                rows="4"
-                placeholder="Tell us the model, budget or service you need"></textarea>
-
-      <button type="submit" class="order-submit">
-        Send Enquiry on WhatsApp
-      </button>
-
-      <p class="form-note">
-        Your enquiry opens in WhatsApp for you to review and send.
-      </p>
-    </form>
-
-  </div>
-</section>
-
+</form>
 </body>
 </html>
