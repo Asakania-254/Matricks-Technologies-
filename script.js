@@ -143,38 +143,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* MATRICKS TECHNOLOGIES WHATSAPP ORDER FORM */
 document.addEventListener("DOMContentLoaded", function () {
+
+  // CUSTOMER ENQUIRY FORM
+  const contactForm = document.getElementById("contactForm");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("customerName").value.trim();
+      const contact = document.getElementById("customerContact").value.trim();
+      const service = document.getElementById("customerService").value;
+      const details = document.getElementById("customerMessage").value.trim();
+
+      if (!name || !contact || !service || !details) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      const message =
+        "Hello Matricks Technologies!\n\n" +
+        "I have a new customer enquiry.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone or Email: " + contact + "\n" +
+        "Product/Service: " + service + "\n" +
+        "Message: " + details + "\n\n" +
+        "Please get back to me. Thank you.";
+
+      const whatsappURL =
+        "https://wa.me/254793535552?text=" +
+        encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank");
+    });
+  }
+
+
+  // EXISTING PRODUCT ORDER FORM
   const orderForm = document.getElementById("orderForm");
 
-  if (!orderForm) return;
+  if (orderForm) {
+    orderForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-  orderForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const product = document.getElementById("orderProduct").value;
+      const quantity = document.getElementById("orderQuantity").value;
+      const details = document.getElementById("orderMessage").value.trim();
 
-    const name = document.getElementById("customerName").value.trim();
-    const phone = document.getElementById("customerPhone").value.trim();
-    const product = document.getElementById("orderProduct").value;
-    const quantity = document.getElementById("orderQuantity").value;
-    const details = document.getElementById("orderMessage").value.trim();
+      if (!name || !phone || !product || Number(quantity) < 1) {
+        alert("Please complete all required fields.");
+        return;
+      }
 
-    if (!name || !phone || !product || Number(quantity) < 1) {
-      alert("Please complete all required fields.");
-      return;
-    }
+      const message =
+        "Hello Matricks Technologies!\n\n" +
+        "I would like to make an enquiry.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Product/Service: " + product + "\n" +
+        "Quantity: " + quantity + "\n" +
+        "Additional details: " + (details || "None") + "\n\n" +
+        "Please get back to me. Thank you.";
 
-    const message =
-      "Hello Matricks Technologies!\n\n" +
-      "I would like to make an enquiry.\n\n" +
-      "Name: " + name + "\n" +
-      "Phone: " + phone + "\n" +
-      "Product/Service: " + product + "\n" +
-      "Quantity: " + quantity + "\n" +
-      "Additional details: " + (details || "None") + "\n\n" +
-      "Please get back to me. Thank you.";
+      const whatsappURL =
+        "https://wa.me/254793535552?text=" +
+        encodeURIComponent(message);
 
-    const whatsappURL =
-      "https://wa.me/254793535552?text=" +
-      encodeURIComponent(message);
+      window.open(whatsappURL, "_blank");
+    });
+  }
 
-    window.open(whatsappURL, "_blank");
-  });
 });
